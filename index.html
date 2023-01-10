@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH-VALIDATION</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="row-content">
+        <!-- ------------------------------------------------------------- -->
+        <div class="title col-lg-12">
+          <h1 class="heading">MOBILE NUMBER VALIDATION DETAILS</h1>
+          <b class="sub-heading"
+            >Enter the Number with Country Calling Code (ex..+91)</b
+          >
+        </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header">
+                <i class="bi bi-telephone-inbound-fill"></i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-telephone-inbound-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z"
+                  /></svg
+                >NUMBER VALIDATION
+              </div>
+              <input
+                placeholder="Enter Number"
+                class="input"
+                id="validation"
+                name="text"
+                type="number"
+              /><button type="button" id="check">CHECK</button>
+
+              <h5 class="card-title">
+                <span class="badge badge-light"
+                  >VALID-STATUS:<span class="badge badge-info" id="status"
+                    >______________</span
+                  ></span
+                >
+              </h5>
+
+              <ul class="list-group">
+                <li class="list">
+                  <span class="badge badge-primary"
+                    ><i class="bi bi-sim-fill"></i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-sim-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5 4.5a.5.5 0 0 1 .5-.5h2v2H5V4.5zM8.5 6V4h2a.5.5 0 0 1 .5.5V6H8.5zM5 7h6v2H5V7zm3.5 3H11v1.5a.5.5 0 0 1-.5.5h-2v-2zm-1 0v2h-2a.5.5 0 0 1-.5-.5V10h2.5z"
+                      />
+                      <path
+                        d="M3.5 0A1.5 1.5 0 0 0 2 1.5v13A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5V3.414a1.5 1.5 0 0 0-.44-1.06L11.647.439A1.5 1.5 0 0 0 10.586 0H3.5zm2 3h5A1.5 1.5 0 0 1 12 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 11.5v-7A1.5 1.5 0 0 1 5.5 3z"
+                      /></svg
+                    >LOCAL-NO:<span class="badge badge-secondary" id="local"
+                      >______________</span
+                    ></span
+                  >
+                </li>
+
+                <li class="list">
+                  <span class="badge badge-primary"
+                    ><i class="bi bi-geo-alt-fill"></i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      /></svg
+                    >LOCATION:<span class="badge badge-secondary" id="place"
+                      >______________</span
+                    ></span
+                  >
+                </li>
+
+                <li class="list">
+                  <span class="badge badge-primary type"
+                    ><i class="bi bi-phone-flip"></i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-phone-flip"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0v2ZM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11c.099 0 .197 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169 0 .003 0 .065-.13.187-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883-.228-.223-.535-.411-.882-.571ZM7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1Z"
+                      /></svg
+                    >TYPE:<span class="badge badge-secondary" id="no-type"
+                      >______________</span
+                    ></span
+                  >
+                </li>
+
+                <li class="list">
+                  <span class="badge badge-primary"
+                    ><i class="bi bi-reception-4"></i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-reception-4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"
+                      /></svg
+                    >NETWORK:<span class="badge badge-secondary" id="network"
+                      >______________</span
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------------------------------------ -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
